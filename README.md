@@ -81,8 +81,6 @@ python paras_flops.py -a {model_name}
 |Mask_R-CNN_ecanet50|44.18M|275.69G|35.6|58.1|37.7|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1r9PGazbGKj953HdNx0z0Ag)|gbx2|
 |Mask_R-CNN_ecanet101|63.17M|351.83G|37.4|59.9|39.8|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/1WeFJa4NyHDh_knTtpzlUZQ)|wywx|
 
-#### Instance segmentation with Mask R-CNN
-
 ## Contact Information
 
 If you have any suggestion or question, you can leave a message here or contact us directly: wubanggu@tju.edu.cn . Thanks for your attention!
