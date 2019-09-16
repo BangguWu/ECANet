@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # ECA-Net: Efficient Channel Attention
 
 ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks
@@ -15,7 +13,7 @@ Channel attention has recently demonstrated to offer great potential in improvin
 
 ![ECA_module](figures/eca_module.jpg)
 
-As illustrated in Figure , Compared with SE block, after channel-wise global average pooling without dimensionality reduction, our ECA captures local cross-channel interaction by considering every channel and its k neighbors. As such, our ECA can be efficiently implemented by a fast 1D convolution of size k. The kernel size k represents the coverage of local cross-channel interaction,
+Comparison of (a) SE block and (b) our efficient channel attention (ECA) module. Given the aggregated feature using global average pooling (GAP), SE block computes weights using two FC layers. Differently, ECA generates channel weights by performing a fast 1D convolution of size k, where k is adaptively determined via a function of channel dimension C.
 
 ## Installation
 
