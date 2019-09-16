@@ -68,7 +68,7 @@ python paras_flops.py -a {model_name}
 ### COCO 2017
 
 #### Detection with Faster R-CNN and Mask R-CNN
-|Model|Param.|FLOPs|$AP$|$AP_{50}$|$AP_{75}$|Pre trained models|Extract code|
+|Model|Param.|FLOPs|AP|AP_50|AP_75|Pre trained models|Extract code|
 |:----|:----:|:---:|:--:|:-------:|:-------:|:----------------:|:----------:|
 |Fast_R-CNN_ecanet50|41.53M|207.18G|38.0|60.6|40.9|[faster_rcnn_ecanet50_k5_bs8_lr0.01](https://pan.baidu.com/s/1DCkaCcpaNOR_-c1SJWf0KQ)|pmq9|
 |Fast_R-CNN_ecanet101|60.52M|283.32G|40.3|62.9|44.0|[faster_rcnn_ecanet101_3357_bs8_lr0.01](https://pan.baidu.com/s/1wZ61wcelA943DRDHWgh2Kg)|yk8o|
@@ -76,7 +76,7 @@ python paras_flops.py -a {model_name}
 |Mask_R-CNN_ecanet101|63.17M|351.83G|41.3|63.1|44.8|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/1WeFJa4NyHDh_knTtpzlUZQ)|wywx|
 
 #### Instance segmentation with Mask R-CNN
-|Model|Param.|FLOPs|$AP$|$AP_{50}$|$AP_{75}$|Pre trained models|Extract code|
+|Model|Param.|FLOPs|AP|AP_50|AP_75|Pre trained models|Extract code|
 |:----|:----:|:---:|:--:|:-------:|:-------:|:----------------:|:----------:|
 |Mask_R-CNN_ecanet50|44.18M|275.69G|35.6|58.1|37.7|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1r9PGazbGKj953HdNx0z0Ag)|gbx2|
 |Mask_R-CNN_ecanet101|63.17M|351.83G|37.4|59.9|39.8|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/1WeFJa4NyHDh_knTtpzlUZQ)|wywx|
