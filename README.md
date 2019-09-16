@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # ECA-Net: Efficient Channel Attention
 
 ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks
@@ -32,7 +34,7 @@ As illustrated in Figure , Compared with SE block, after channel-wise global ave
 
 ### Start Up
 
-#### Train on ResNet
+#### Train with ResNet
 
 You can run the `main.py` to train or evaluate as follow:
 
@@ -44,7 +46,7 @@ For example:
 CUDA_VISIBLE_DEVICES=0,1,2,3 python main -a eca_resnet50 --ksize 3557 ./datasets/ILSVRC2012/images
 ```
 
-#### Train on MobileNet_v2
+#### Train with MobileNet_v2
 It is same with above ResNet replace `main.py` by `light_main.py`.
 
 #### Compute the parameters and FLOPs
@@ -55,22 +57,31 @@ python paras_flops.py -a {model_name}
 
 ## Experiments
 
-### ResNet
+### ImageNet
 |Model|Param.|FLOPs|Top-1(%)|Top-5(%)|Pre trained models|Extract code|
 |:---:|:----:|:---:|:------:|:------:|:----------------:|:----------:|
-|ResNet50|24.37M|3.86G|75.20|92.52|-|-|
-|ECA-Net50|24.37M|3.86M|77.48|93.68|[eca_resnet50_k3557](https://pan.baidu.com/s/1pcn6ZfZUAYKycZ6FMr4F2Q)|7qo9|
-|ResNet101|42.49M|7.34G|76.83|93.48|-|-|
+|ECA-Net50|24.37M|3.86G|77.48|93.68|[eca_resnet50_k3557](https://pan.baidu.com/s/1pcn6ZfZUAYKycZ6FMr4F2Q)|7qo9|
 |ECA-Net101|42.49M|7.35G|78.65|94.34|[eca_resnet101_k3357](https://pan.baidu.com/s/1Cx8dt5RrQlf-Q6BZ82QSDg)|mvg2|
-|ResNet152|57.40M|10.82G|77.00|93.30|-|-|
 |ECA-Net152|57.41M|10.83G|78.92|94.55|[eca_resnet152_k3357](https://pan.baidu.com/s/1H2rbU1ngMOLU6y4R753r-Q)|ysh9|
-
-
-### MobileNet_v2
-|Model|Param.|FLOPs|Top-1(%)|Top-5(%)|Pre trained models|
-|:---:|:----:|:---:|:------:|:------:|:----------------:|
-|MobileNet_v2|3.34M|319.4M|71.64|90.20|-|
 |ECA-MobileNet_v2|3.34M|319.9M|72.56|90.81|[eca_mobilenetv2_k13](https://pan.baidu.com/s/143B03YTGE2ogkPoCj3IorQ)|atpt|
+
+### COCO 2017
+
+#### Detection with Faster R-CNN and Mask R-CNN
+|Model|Param.|FLOPs|$AP$|$AP_{50}$|$AP_{75}$|Pre trained models|Extract code|
+|:----|:----:|:---:|:--:|:-------:|:-------:|:----------------:|:----------:|
+|Fast_R-CNN_ecanet50|41.53M|207.18G|38.0|60.6|40.9|[faster_rcnn_ecanet50_k5_bs8_lr0.01](https://pan.baidu.com/s/1DCkaCcpaNOR_-c1SJWf0KQ)|pmq9|
+|Fast_R-CNN_ecanet101|60.52M|283.32G|40.3|62.9|44.0|[faster_rcnn_ecanet101_3357_bs8_lr0.01](https://pan.baidu.com/s/1wZ61wcelA943DRDHWgh2Kg)|yk8o|
+|Mask_R-CNN_ecanet50|44.18M|275.69G|39.0|61.3|42.1|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1r9PGazbGKj953HdNx0z0Ag)|gbx2|
+|Mask_R-CNN_ecanet101|63.17M|351.83G|41.3|63.1|44.8|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/1WeFJa4NyHDh_knTtpzlUZQ)|wywx|
+
+#### Instance segmentation with Mask R-CNN
+|Model|Param.|FLOPs|$AP$|$AP_{50}$|$AP_{75}$|Pre trained models|Extract code|
+|:----|:----:|:---:|:--:|:-------:|:-------:|:----------------:|:----------:|
+|Mask_R-CNN_ecanet50|44.18M|275.69G|35.6|58.1|37.7|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1r9PGazbGKj953HdNx0z0Ag)|gbx2|
+|Mask_R-CNN_ecanet101|63.17M|351.83G|37.4|59.9|39.8|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/1WeFJa4NyHDh_knTtpzlUZQ)|wywx|
+
+#### Instance segmentation with Mask R-CNN
 
 ## Contact Information
 
