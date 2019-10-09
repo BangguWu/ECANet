@@ -9,12 +9,13 @@ Channel attention has recently demonstrated to offer great potential in improvin
 
 ## Citation
 
-@article{wang2019eca, 
-   title={ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks},
-   author={Qilong Wang, Banggu Wu, Pengfei Zhu, Peihua Li, Wangmeng Zuo and Qinghua Hu},
-   journal={arXiv:1910.03151},
-   year={2019}
- }
+    @article{wang2019eca,
+       title={ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks},
+       author={Qilong Wang, Banggu Wu, Pengfei Zhu, Peihua Li, Wangmeng Zuo and Qinghua Hu},
+       journal={arXiv:1910.03151},
+       year={2019}
+     }
+
 
 ## ECA module
 
