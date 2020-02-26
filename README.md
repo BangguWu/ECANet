@@ -17,7 +17,7 @@ Channel attention has recently demonstrated to offer great potential in improvin
      }
 
 ## Changelog
-2020/02/26 Update ECA-Resnet34 model.
+2020/02/26 Upload ECA-Resnet34 model.
 
 
 ## ECA module
