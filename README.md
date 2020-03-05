@@ -18,6 +18,7 @@ Channel attention has recently demonstrated to offer great potential in improvin
 
 ## Changelog
 2020/02/26 Upload ECA-Resnet34 model.
+2020/03/05 Upload RetinaNet-ecanet50 and RetinaNet-ecanet101 model
 
 
 ## ECA module
@@ -84,12 +85,16 @@ python paras_flops.py -a {model_name}
 |Fast_R-CNN_ecanet101|60.52M|283.32G|40.3|62.9|44.0|[faster_rcnn_ecanet101_3357_bs8_lr0.01](https://pan.baidu.com/s/1Ag96zDW7R0PVVZsNaJ9XCQ)|d3kd|[faster_rcnn_ecanet101_3357_bs8_lr0.01](https://drive.google.com/open?id=1otCeuTSs4DRLTBIO6cYjm7e-5dQK1dMX)|
 |Mask_R-CNN_ecanet50|44.18M|275.69G|39.0|61.3|42.1|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1h_2PgK4PMHa2nTIqU3ZNkQ)|xe19|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://drive.google.com/open?id=1z5sAqOD6zZzoVOyAd2VmBztmMXUKy-Nv)|
 |Mask_R-CNN_ecanet101|63.17M|351.83G|41.3|63.1|44.8|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/19gph8Sr5nv11_kCecEyu5w)|y5e9|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://drive.google.com/open?id=1Rv-VjdfWOt5mE45M0lihgv59fqnCAHQq)|
+|RetinaNet_ecanet50|37.74M|239.43G|37.3|57.7|39.6|[RetinaNet_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1uL-EwILJVeW7O2O3oBmO0A)|my44|[RetinaNet_ecanet50_k3377_bs8_lr0.01](https://drive.google.com/open?id=1Pp6gndZFiZZo2BdbVmzUKQUtQ1m4kIbW)|
+|RetinaNet_ecanet101|56.74M|315.57G|39.1|59.9|41.8|[RetinaNet_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/1Rt3ijSItumSlqHFjS4J51w)|2eu5|[RetinaNet_ecanet101_k3357_bs8_lr0.01](https://drive.google.com/open?id=1290duDtOGMpp3QrL47CRAq24oGPgbtct)|
 
 #### Instance segmentation with Mask R-CNN
 |Model|Param.|FLOPs|AP|AP_50|AP_75|Pre trained models|Extract code|GoogleDrive|
 |:----|:----:|:---:|:--:|:-------:|:-------:|:----------------:|:----------:|:---------:|
 |Mask_R-CNN_ecanet50|44.18M|275.69G|35.6|58.1|37.7|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1h_2PgK4PMHa2nTIqU3ZNkQ)|xe19|[mask_rcnn_ecanet50_k3377_bs8_lr0.01](https://drive.google.com/open?id=1z5sAqOD6zZzoVOyAd2VmBztmMXUKy-Nv)|
 |Mask_R-CNN_ecanet101|63.17M|351.83G|37.4|59.9|39.8|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/19gph8Sr5nv11_kCecEyu5w)|y5e9|[mask_rcnn_ecanet101_k3357_bs8_lr0.01](https://drive.google.com/open?id=1Rv-VjdfWOt5mE45M0lihgv59fqnCAHQq)|
+|RetinaNet_ecanet50|37.74M|239.43G|35.6|58.1|37.7|[RetinaNet_ecanet50_k3377_bs8_lr0.01](https://pan.baidu.com/s/1uL-EwILJVeW7O2O3oBmO0A)|my44|[RetinaNet_ecanet50_k3377_bs8_lr0.01](https://drive.google.com/open?id=1Pp6gndZFiZZo2BdbVmzUKQUtQ1m4kIbW)|
+|RetinaNet_ecanet101|56.74M|315.57G|37.4|59.9|39.8|[RetinaNet_ecanet101_k3357_bs8_lr0.01](https://pan.baidu.com/s/1Rt3ijSItumSlqHFjS4J51w)|2eu5|[RetinaNet_ecanet101_k3357_bs8_lr0.01](https://drive.google.com/open?id=1290duDtOGMpp3QrL47CRAq24oGPgbtct)|
 
 ## Contact Information
 
