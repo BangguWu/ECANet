@@ -18,6 +18,7 @@ Channel attention has recently demonstrated to offer great potential in improvin
 
 ## Changelog
 2020/02/26 Upload ECA-Resnet34 model.
+
 2020/03/05 Upload RetinaNet-ecanet50 and RetinaNet-ecanet101 model
 
 
