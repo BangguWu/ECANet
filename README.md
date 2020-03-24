@@ -5,22 +5,23 @@ ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks
 This is an implementation of ECA-Net, created by Banggu Wu.
 
 ## Introduction
-Channel attention has recently demonstrated to offer great potential in improving the performance of deep convolutional neural networks (CNNs). However, most existing methods dedicate to developing more sophisticated attention modules to achieve better performance, inevitably increasing the computational burden. To overcome the paradox of performance and complexity trade-off, this paper makes an attempt to investigate an extremely lightweight attention module for boosting the performance of deep CNNs. In particular, we propose an Efficient Channel Attention (ECA) module, which only involves `k` (`k<=9`) parameters but brings clear performance gain. By revisiting the channel attention module in SENet, we empirically show avoiding dimensionality reduction and appropriate cross-channel interaction are important to learn effective channel attention. Therefore, we propose a local cross-channel interaction strategy without dimension reduction, which can be efficiently implemented by a fast `1D` convolution. Furthermore, we develop a function of channel dimension to adaptively determine kernel size of `1D` convolution, which stands for coverage of local cross-channel interaction. Our ECA module can be flexibly incorporated into existing CNN architectures, and the resulting CNNs are named by ECA-Net.We extensively evaluate the proposed ECA-Net on image classification, object detection and instance segmentation with backbones of ResNets and MobileNetV2. The experimental results show our ECA-Net is more efficient while performing favorably against its counterparts.
+Recently, channel attention mechanism has demonstrated to offer great potential in improving the performance of deep convolutional neuralnetworks (CNNs). However, most existing methods dedicate to developing more sophisticated attention modules for achieving better performance,which inevitably increase model complexity. To overcome the paradox of performance and complexity trade-off, this paper proposes an EfficientChannel Attention (ECA) module, which only involves a handful of parameters while bringing clear performance gain. By dissecting the channelattention module in SENet, we empirically show avoiding dimensionality reduction is important for learning channel attention, and appropriatecross-channel interaction can preserve performance while significantly decreasing model complexity. Therefore, we propose a localcross-channel interaction strategy without dimensionality reduction, which can be efficiently implemented via `1D` convolution. Furthermore,we develop a method to adaptively select kernel size of `1D` convolution, determining coverage of local cross-channel interaction. Theproposed ECA module is efficient yet effective, e.g., the parameters and computations of our modules against backbone of ResNet50 are 80 vs.24.37M and 4.7e-4 GFLOPs vs. 3.86 GFLOPs, respectively, and the performance boost is more than 2\% in terms of Top-1 accuracy. We extensivelyevaluate our ECA module on image classification, object detection and instance segmentation with backbones of ResNets and MobileNetV2. Theexperimental results show our module is more efficient while performing favorably against its counterparts.
 
 ## Citation
 
-    @article{wang2019eca,
+    @InProceedings{wang2019eca,
        title={ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks},
        author={Qilong Wang, Banggu Wu, Pengfei Zhu, Peihua Li, Wangmeng Zuo and Qinghua Hu},
-       journal={arXiv:1910.03151},
-       year={2019}
+       booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+       year={2020}
      }
 
 ## Changelog
 2020/02/26 Upload ECA-Resnet34 model.
 
-2020/03/05 Upload RetinaNet-ecanet50 and RetinaNet-ecanet101 model
+2020/03/05 Upload RetinaNet-ecanet50 and RetinaNet-ecanet101 model.
 
+2020/03/24 Update the Introduction and Citation.
 
 ## ECA module
 
