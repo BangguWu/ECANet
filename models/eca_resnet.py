@@ -152,7 +152,7 @@ def eca_resnet18(k_size=[3, 3, 3, 3], num_classes=1_000, pretrained=False):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
         num_classes:The classes of classification
     """
-    model = ResNet(ECABasicBlock, [2, 2, 2, 2], num_classes=num_classes, k_size=[3, 3, 3, 3])
+    model = ResNet(ECABasicBlock, [2, 2, 2, 2], num_classes=num_classes, k_size=k_size)
     model.avgpool = nn.AdaptiveAvgPool2d(1)
     return model
 
