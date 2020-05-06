@@ -4,6 +4,8 @@ ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks
 
 This is an implementation of ECA-Net(CVPR2020,[paper](https://arxiv.org/abs/1910.03151)), created by Banggu Wu.
 
+![Poster](figures/poster.jpg)
+
 ## Introduction
 Recently, channel attention mechanism has demonstrated to offer great potential in improving the performance of deep convolutional neuralnetworks (CNNs). However, most existing methods dedicate to developing more sophisticated attention modules for achieving better performance,which inevitably increase model complexity. To overcome the paradox of performance and complexity trade-off, this paper proposes an EfficientChannel Attention (ECA) module, which only involves a handful of parameters while bringing clear performance gain. By dissecting the channelattention module in SENet, we empirically show avoiding dimensionality reduction is important for learning channel attention, and appropriatecross-channel interaction can preserve performance while significantly decreasing model complexity. Therefore, we propose a localcross-channel interaction strategy without dimensionality reduction, which can be efficiently implemented via `1D` convolution. Furthermore,we develop a method to adaptively select kernel size of `1D` convolution, determining coverage of local cross-channel interaction. Theproposed ECA module is efficient yet effective, e.g., the parameters and computations of our modules against backbone of ResNet50 are 80 vs.24.37M and 4.7e-4 GFLOPs vs. 3.86 GFLOPs, respectively, and the performance boost is more than 2\% in terms of Top-1 accuracy. We extensivelyevaluate our ECA module on image classification, object detection and instance segmentation with backbones of ResNets and MobileNetV2. Theexperimental results show our module is more efficient while performing favorably against its counterparts.
 
@@ -24,6 +26,8 @@ Recently, channel attention mechanism has demonstrated to offer great potential 
 2020/03/24 Update the Introduction and Citation.
 
 2020/03/30 Upload ECA-Resnet18 model.
+
+2020/05/06 Update the poster.
 
 ## ECA module
 
