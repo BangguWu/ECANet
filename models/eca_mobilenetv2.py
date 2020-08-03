@@ -74,7 +74,7 @@ class ECA_MobileNetV2(nn.Module):
         for t, c, n, s in inverted_residual_setting:
             output_channel = int(c * width_mult)
             for i in range(n):
-                if c <= 96:
+                if c < 96:
                     ksize = 1
                 else:
                     ksize = 3
