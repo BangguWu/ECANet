@@ -13,7 +13,6 @@ class eca_layer(nn.Module):
 
 
     def forward(self, x):
-        b, c, _, _ = x.size()
         y = self.avg_pool(x)
         y = nn.functional.unfold(y.transpose(-1, -3), kernel_size=(1, self.k_size), padding=(0, (self.k_size - 1) // 2))
         y = self.conv(y.transpose(-1, -2)).unsqueeze(-1)
